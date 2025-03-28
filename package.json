@@ -35,7 +35,8 @@
 		"test": "react-scripts test",
 		"eject": "react-scripts eject",
 		"format": "biome format . --write",
-		"prepare": "husky"
+		"prepare": "husky",
+		"css:compile": "npx @tailwindcss/cli -i ./src/index.css -o ./src/index.tailwind.css"
 	},
 	"eslintConfig": {
 		"extends": ["react-app", "react-app/jest"]
