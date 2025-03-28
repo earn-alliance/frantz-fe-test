@@ -88,6 +88,8 @@ test("fetches and displays all games when user visits page", async () => {
 	expect(game).toBeInTheDocument();
 });
 
-test.todo('filters games by name when user types in the input search field')
-test.todo('filters games by genre when user selects a genre checkbox')
-test.todo('filters games by live status when user selects a live status checkbox')
+test.todo("filters games by name when user types in the input search field");
+test.todo("filters games by genre when user selects a genre checkbox");
+test.todo(
+	"filters games by live status when user selects a live status checkbox",
+);

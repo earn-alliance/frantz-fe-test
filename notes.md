@@ -53,3 +53,11 @@ Debatable, but I wouldn't use Javascript in a project just so making choices aro
 5. I would add a CI/CD pipeline. This would allow for automated testing and deployment of the application.
 
 6. I would migrate from CRA to vite. Vite is much faster than CRA, and would allow for faster development and testing of the application. CRA is just way below industry standards.
+
+7. Use SSR for the application. This would allow for faster loading of the application, and also better SEO. Also, exposing the hasura secret on the client is a huge security risk. Rendering from the server allows us more control over the source of our data.
+
+## Setting up codebase
+
+After following the instructions in the #readme.md file, you need to do one more thing:
+
+- Setup environment variables for project. run the command `cp .env.example .env.local` . This would define 3 basic environment variables needed for the client to connect correctly to the server.
